@@ -28,9 +28,10 @@ export default {
 
   created() {
     const vm = this
-    axios.get("http://localhost:4000/posts").then(function(repsonse) {
-      vm.posts = Object.values(repsonse.data)
-    })
+    axios.get("http://localhost:4002/posts")
+         .then(function(repsonse) {
+           vm.posts = Object.values(repsonse.data)
+         })
   }
 
 };

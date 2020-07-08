@@ -9,22 +9,8 @@
 </template>
 
 <script>
-import axios from "axios"
 
 export default {
-  props: ["postId"],
-  data() {
-    return {
-      comments: []
-    }
-  },
-  created() {
-    const vm = this;
-    axios
-      .get(`http://localhost:4001/posts/${this.postId}/comments`)
-      .then(function(response) {
-        vm.comments = response.data;
-      });
-  }
+  props: ["postId", "comments"]
 };
 </script>
