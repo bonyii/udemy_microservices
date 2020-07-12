@@ -2,7 +2,7 @@
   <div class="px-2">
     <ul class="list-disc text-left list-inside">
       <li v-for="comment in comments" :key="comment.id">
-        {{ comment.content }}
+        {{ comment.content }} - {{ comment.status === 'pending' ? "Waiting for moderation" : comment.status }}
       </li>
     </ul>
   </div>
