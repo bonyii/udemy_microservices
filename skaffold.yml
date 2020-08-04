@@ -9,7 +9,7 @@ build:
     push: false
   artifacts:
     - image: bonyii/micro-client
-      context: client-depl
+      context: client
       docker:
         dockerfile: Dockerfile
       sync:
