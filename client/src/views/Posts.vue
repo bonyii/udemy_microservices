@@ -1,8 +1,8 @@
 <template>
   <div>
     <ul class="flex">
-      <li v-for="post in posts" :key="post.id" class="w-64 mx-2 border">
-        <div class="bg-gray-200 border-b font-bold">{{ post.title }}</div>
+      <li v-for="post in posts" :key="post.id" class="w-64 mx-2 pb-2 border">
+        <div class="bg-gray-200 p-2 border-b font-bold">{{ post.title }}</div>
         <comments :postId="post.id" :comments="post.comments"></comments>
         <comment-create :postId="post.id"></comment-create>
       </li>
