@@ -22,7 +22,7 @@ export default {
   },
   methods: {
     submit() {
-      axios.post(`http://localhost:4001/posts/${this.postId}/comments`, {
+      axios.post(`http://posts.com/posts/${this.postId}/comments`, {
         content: this.content
       });
       console.log(this.content);

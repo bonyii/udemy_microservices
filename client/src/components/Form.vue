@@ -35,7 +35,7 @@ export default {
   },
   methods: {
     submit() {
-      axios.post("http://localhost:4000/posts", {
+      axios.post("http://posts.com/posts", {
         title: this.title
       });
       console.log(this.title);
