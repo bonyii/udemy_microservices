@@ -1,6 +1,6 @@
 module.exports = {
   // options...
   devServer: {
-    disableHostCheck: true
+    public: 'posts.com:80'
   }
 }
