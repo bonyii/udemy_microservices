@@ -35,7 +35,7 @@ export default {
   },
   methods: {
     submit() {
-      axios.post("http://posts.com/posts", {
+      axios.post("http://posts.com/posts/create", {
         title: this.title
       });
       console.log(this.title);
